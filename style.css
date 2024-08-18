@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Use apenas a fonte Montserrat */
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+body {
+    height: 10%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    position: absolute;
+    margin: 40px 0 0 40px;
+}
+
+header.logo {
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background: url(images/white.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.Campo_encriptador {
+    width: 60%;
+    margin: 168px 0 0 140px;
+    background: transparent;
+}
+
+.Entrada_encriptar {
+    width: 680px;
+    height: 270px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    border: 1px solid #C5C5C5;
+    border-radius: 15px;
+    resize: none;
+    outline: none;
+    background: #f9fafa;
+}
+
+.encriptar::placeholder,
+.encriptar:focus {
+    color: #0A3871;
+}
+
+.encriptador_notificacao {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 500px;
+    gap: 8px;
+}
+
+.encriptador-botoes {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 525px;
+    gap: 8px;
+}
+
+.btn-criptografar{
+    width: 328px;
+    height: 67px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 24px;
+    text-align: center;
+    color: #ffffff;
+    background: #222831;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.btn-criptografar:active {
+    box-shadow: inset 2px 4px #C5C5C5;
+    color: #D8DFE8;
+}
+
+.btn-descriptografar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    background: #76ABAE;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+
+}
+
+.btn-copiar {
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #A0937D;
+    border: 1px solid #485362;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-criptografar:hover,
+.btn-descriptografar:hover,
+.btn-copiar:hover {
+    transform: scale(0.94);
+}
+
+.btn-copiar{
+    display: none;
+}
+
+.Campo_Mensagem {
+    width: 270px;
+    height: 580px;
+    background: #f9fafa;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.mensagem {
+    width: 270px;
+    margin-top: 50%;
+    background: #f9fafa;
+}
+
+.img-boneco {
+    background: #f9fafa;
+}
+
+.texto-vazio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #403e3e;
+    background: #f9fafa;
+}
+
+.texto-mensagem {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #232523;
+    background: #f9fafa;
+}
+
+.texto_retornado {
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #033466;
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.texto_retornado:focus {
+    outline: none;
+}

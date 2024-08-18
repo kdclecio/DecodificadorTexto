@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img  class="logoAlura" src="images/logo_alura.png" alt="Logo Alura">
+        </a>
+    </header>
+
+    <main>
+        <section class="Campo_encriptador">
+            <textarea class="Entrada_encriptar" id="inputTexto"  placeholder="Digite o texto aqui"></textarea>
+            <div class="encriptador_notificacao">
+                <img src="images/notificacao.png" alt="imagem de notificação">
+            </div>
+            <div class="encriptador-botoes">
+                <button type="submit" class="btn-criptografar" onclick="encriptar()">Criptografar</button>
+                <button type="submit" class="btn-descriptografar" onclick="desencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="Campo_Mensagem">
+            <div class="mensagem">
+                <img class="img-boneco" src="images/boneco.png" alt="imagem de um boneco" id="imgDer">
+                <p class="texto-vazio" id="texto">Nenhuma mensagem foi encontrada</p>
+                <p class="texto-mensagem" id="texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <textarea type="mensagem" class="texto_retornado" readonly></textarea>
+            <button type="submit" class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+</body>
+</html>
